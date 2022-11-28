@@ -49,5 +49,7 @@
     <x:String x:Key="FindEMAIL">Buscar EMAIL</x:String>
 
     <x:String x:Key="NoEmailEmployee">El empleado no tiene un Email registrado</x:String>
-    
+    <x:String x:Key="WebViewPage">Consulta de Email</x:String>
+
+    <x:String x:Key="EmployeePage">Detalle de empleado</x:String>
 </ResourceDictionary>
