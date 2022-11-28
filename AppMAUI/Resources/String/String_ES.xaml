@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMAUI.Resources.String.String_ES">
+
+    <x:String x:Key="Welcome">Bienvenido</x:String>
+    <x:String x:Key="TypeAuthentication">Por favor, inicie sesión para continuar</x:String>
+    <x:String x:Key="fingerprint">Huella dactilar</x:String>
+    <x:String x:Key="facialRecognition">Reconocimiento facial</x:String>
+
+    <x:String x:Key="Exit">Salir</x:String>
+    <x:String x:Key="cancel">Cancelar</x:String>
+    <x:String x:Key="Yes">Si</x:String>
+    <x:String x:Key="No">No</x:String>
+    <x:String x:Key="Ok">Ok</x:String>
+    <x:String x:Key="Error">Error</x:String>
+
+    <x:String x:Key="Login">Autenticarse</x:String>
+    
+    <x:String x:Key="fingerprint_title">Vamos a verificar quien eres</x:String>
+    <x:String x:Key="fingerprint_subtitle">Por favor, pon tu huella en el censor</x:String>
+    <x:String x:Key="fingerprint_desctiption">Esto es necesario para validar que realmente eres tu</x:String>
+
+    <x:String x:Key="fingerprint_login_success">Autenticación realizada correctamente</x:String>
+    <x:String x:Key="fingerprint_login_failed">No se pudo realizar la validación correctamente</x:String>
+    <x:String x:Key="fingerprint_NoBiometrics">No tiene huellas dactilares resgistradas</x:String>
+    <x:String x:Key="fingerprint_NoDeviceCredential">No es posible realizar la validación de huellas, este no está disponible</x:String>
+    <x:String x:Key="fingerprint_Timeout">Por favor, vuelva a intentarlo</x:String>
+
+    <x:String x:Key="Logout_title">Cerrar Sesión</x:String>
+    <x:String x:Key="Logout_Subtitle">¿Está seguro que desea cerrar sesión?</x:String>
+
+    <x:String x:Key="ListEmployee">Listado de empleados</x:String>
+
+    <x:String x:Key="ErrorLoadingEmployee">A ocurrido un error cargando los empleados, por favor, vuelva a intentarlo</x:String>
+    <x:String x:Key="StopSearchByUser">Se ha detenido la busqueda de empleados, por solicitud del usuario</x:String>
+
+    <x:String x:Key="PersonalInformation">Datos personales</x:String>
+    <x:String x:Key="Name">Nombre</x:String>
+    <x:String x:Key="ContactInformation">Datos de contacto</x:String>
+    <x:String x:Key="Eamil">Eamil</x:String>
+    <x:String x:Key="Telephone">Telefono</x:String>
+    <x:String x:Key="Fax">Fax</x:String>
+    <x:String x:Key="OtherData">Otros Datos</x:String>
+    <x:String x:Key="Username">Username</x:String>
+    <x:String x:Key="LastLogin">Ultimo inicio de sesión</x:String>
+    <x:String x:Key="CreatedOn">Fecha de creación</x:String>
+    <x:String x:Key="DeletedOn">Fecha de eliminación</x:String>
+    <x:String x:Key="FindEMAIL">Buscar EMAIL</x:String>
+
+    <x:String x:Key="NoEmailEmployee">El empleado no tiene un Email registrado</x:String>
+    
+</ResourceDictionary>

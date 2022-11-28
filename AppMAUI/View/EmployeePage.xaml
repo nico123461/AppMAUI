@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMAUI.EmployeePage"
+             Title="EmployeePage">
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TableView Intent="Form" Grid.Row="0">
+            <TableRoot>
+                <TableSection Title="{DynamicResource PersonalInformation}">
+                    <TextCell Text="{DynamicResource Name}" Detail="{Binding Employee.Name}" />
+                </TableSection>
+                <TableSection Title="{DynamicResource ContactInformation}">
+                    <TextCell Text="{DynamicResource Eamil}" Detail="{Binding Employee.Email}" />
+                    <TextCell Text="{DynamicResource Telephone}" Detail="{Binding Employee.Telephone}" />
+                    <TextCell Text="{DynamicResource Fax}" Detail="{Binding Employee.Fax}" />
+                </TableSection>
+                <TableSection Title="{DynamicResource OtherData}">
+                    <TextCell Text="{DynamicResource Username}" Detail="{Binding Employee.Username}" />
+                    <TextCell Text="{DynamicResource LastLogin}" Detail="{Binding Employee.LastLogin}" />
+                    <TextCell Text="{DynamicResource CreatedOn}" Detail="{Binding Employee.CreatedOn}" />
+                    <TextCell Text="{DynamicResource DeletedOn}" Detail="{Binding Employee.DeletedOn}" />
+                </TableSection>
+            </TableRoot>
+        </TableView>
+        <Button Grid.Row="1" Text="{DynamicResource FindEMAIL}" Command="{Binding OnClickButtonFind}" />
+    </Grid>
+</ContentPage>

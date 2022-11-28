@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMAUI.MainPage"
+             xmlns:local2="clr-namespace:AppMAUI.ModelView"
+             Title="{DynamicResource ListEmployee}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="{DynamicResource Exit}" Command="{Binding CommandLogoutAction}"  />
+    </ContentPage.ToolbarItems>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <SearchBar Grid.Row="0" Margin="0,0,0,10" SearchCommand="{Binding SearchCommand}" Text="{Binding SearchText, Mode=TwoWay}" />
+        <RefreshView Grid.Row="1" Command="{Binding RefreshCommand}" IsRefreshing="{Binding IsRefreshing}">
+            <ListView ItemsSource="{Binding Employees}" SelectedItem="{Binding EmployeeSelected, Mode=TwoWay}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Username}" Detail="{Binding Email}"  />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </RefreshView>
+        <Button Grid.Row="2" Margin="4" Text="Cancelar busqueda" IsVisible="{Binding IsRefreshing}" Command="{Binding CancelCommand}" />
+    </Grid>
+</ContentPage>

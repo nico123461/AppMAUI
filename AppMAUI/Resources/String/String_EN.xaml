@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMAUI.Resources.String.String_EN">
+
+    <x:String x:Key="Welcome">Welcome</x:String>
+    <x:String x:Key="TypeAuthentication">Please sign in to continue</x:String>
+    <x:String x:Key="fingerprint">Fingerprint</x:String>
+    <x:String x:Key="facialRecognition">facial recognition</x:String>
+
+    <x:String x:Key="Exit">Exit</x:String>
+    <x:String x:Key="cancel">Cancel</x:String>
+    <x:String x:Key="Yes">Yes</x:String>
+    <x:String x:Key="No">Not</x:String>
+    <x:String x:Key="Ok">Ok</x:String>
+    <x:String x:Key="Error">Error</x:String>
+
+    <x:String x:Key="Login">authenticate</x:String>
+
+    <x:String x:Key="fingerprint_title">let's check who you are</x:String>
+    <x:String x:Key="fingerprint_subtitle">Please put your fingerprint on the censor</x:String>
+    <x:String x:Key="fingerprint_desctiption">This is necessary to validate that it really is you</x:String>
+
+    <x:String x:Key="fingerprint_login_success">Authentication successful</x:String>
+    <x:String x:Key="fingerprint_login_failed">Validation failed</x:String>
+    <x:String x:Key="fingerprint_NoBiometrics">No fingerprints on file</x:String>
+    <x:String x:Key="fingerprint_NoDeviceCredential">Fingerprint validation is not possible, this is not available</x:String>
+    <x:String x:Key="fingerprint_Timeout">Please, try again</x:String>
+
+    <x:String x:Key="Logout_title">Sign off</x:String>
+    <x:String x:Key="Logout_Subtitle">Are you sure you want to log out?</x:String>
+
+    <x:String x:Key="ListEmployee">Employee list</x:String>
+
+    <x:String x:Key="ErrorLoadingEmployee">An error occurred loading the employees, please try again</x:String>
+    <x:String x:Key="StopSearchByUser">The search for employees has been stopped, per user request</x:String>
+
+    <x:String x:Key="PersonalInformation">Personal information</x:String>
+    <x:String x:Key="Name">Name</x:String>
+    <x:String x:Key="ContactInformation">Contact information</x:String>
+    <x:String x:Key="Eamil">Email</x:String>
+    <x:String x:Key="Telephone">Telephone</x:String>
+    <x:String x:Key="Fax">Fax</x:String>
+    <x:String x:Key="OtherData">Other data</x:String>
+    <x:String x:Key="Username">Username</x:String>
+    <x:String x:Key="LastLogin">last login</x:String>
+    <x:String x:Key="CreatedOn">Creation date</x:String>
+    <x:String x:Key="DeletedOn">Deletion date</x:String>
+    <x:String x:Key="FindEMAIL">Search Email</x:String>
+
+    <x:String x:Key="NoEmailEmployee">The employee does not have a registered Email</x:String>
+
+</ResourceDictionary>
